@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+ <head>
+  <title></title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/fcc94d345f.js" crossorigin="anonymous"></script>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+ </head>
+ <body>
+  <header>
+    <h1 class="h1">Noten-Rechner</h1>
+    <br>
+    <br>
+    <div id="panel">
+      <i onclick="set()" class="fas fa-sliders-h" id="button"></i>
+    </div>
+  </header>
+  <div class="container">
+    <div id="settings"></div>
+    <div id="eingabe">
+      1. Klausur:<input id="schriftlich1" type="text"
+      placeholder="schriftlich"> </input>
+      <br>
+      2. Klausur:<input id="schriftlich2" type="text"
+      placeholder="schriftlich"> </input>
+      <br>
+      <br>
+      <br>
+      1. Quartal:<input id="muendlich1" type="text"
+      placeholder="mündlich"> </input>
+      <br>
+      2. Quartal:<input id="muendlich2" type="text"
+      placeholder="mündlich">
+      </input>
+      
+      <br>
+      <br>
+      <br>
+      <div id="halbdiv"></div>
+      <br>
+      
+    </div>
+    <br>
+    <div id="ausgabe">
+      <button class="myButton"
+      onclick="calculate()">Berechnen</button>
+      <br>
+      <div id="manudiv"></div>
+      <p id="guess">Erkannt: </p>
+      <br>
+      <div id="ausgabeS">
+        <span id="anzeige1">Deine Note:</span>
+        <span id="out"> </span>
+        <br>
+        <br>
+        <span id="anzeige2">Deine Notenpunkte:</span>
+        <span id="punkte"></span>
+      </div>
+    </div>
+  </div>
+  <footer>
+  <p class="bottom"><a href="version.html">Version</a>
+   5.1/ <a href="impressum.html">Impressum</a><i class="fas fa-circle" id="color" onclick="farbe()"></i></p>
+  </footer>
+  
+  <script src="script.js"></script>
+ </body>
+</html>
